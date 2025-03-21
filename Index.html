@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Análisis del libro 'El nombre de la rosa'.">
+    <meta name="author" content="Natalia Rodríguez">
+    <title>El Nombre de la Rosa - Análisis</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-image: url('Castillo fondo.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #C4B78F;
+            margin: 0;
+            padding: 0;
+            text-align: justify;
+            line-height: 1.8;
+        }
+        nav, header, .content-section, aside, footer, table {
+            border: 2px solid #8B8565;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+        nav {
+            background-color: #4C4632;
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #E0DCC3;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            color: #FFF;
+        }
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: rgba(76, 70, 50, 0.8);
+            border-bottom: 2px solid #8B8565;
+            color: #E0DCC3;
+            margin-top: 60px;
+        }
+        h1 {
+            font-size: 3em;
+            color: #8B8565;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .content-section {
+            flex: 65%;
+            margin: 20px 10px;
+            padding: 20px;
+            background-color: rgba(98, 92, 68, 0.8);
+            color: #C4B78F;
+        }
+        aside {
+            flex: 30%;
+            padding: 20px;
+            background-color: rgba(76, 70, 50, 0.8);
+            color: #E0DCC3;
+            margin: 20px 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: rgb(86, 79, 58);
+            color: #C4B78F;
+        }
+        th, td {
+            border: 1px solid #8B8565;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: rgb(80, 76, 54);
+        }
+        table a {
+            color: #E0DCC3;
+            font-weight: bold;
+        }
+        table a:hover {
+            color: #FFF;
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(76, 70, 50, 0.8);
+            color: #C4B78F;
+        }
+        footer a {
+            color: #8B8565;
+        }
+
+        /* Estilo para los acordeones */
+        .accordion {
+            background-color: rgba(76, 70, 50, 0.8);
+            color: #E0DCC3;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: 2px solid #8B8565;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+        }
+
+        .active, .accordion:hover {
+            background-color: rgba(98, 92, 68, 0.8);
+        }
+
+        .accordion:after {
+            content: '\002B';
+            color: #C4B78F;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .active:after {
+            content: "\2212";
+        }
+
+        .panel {
+            padding: 0 18px;
+            background-color: rgba(76, 70, 50, 0.8);
+            display: none;
+            overflow: hidden;
+            border: 2px solid #8B8565;
+            border-top: none;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#introduccion">Introducción</a></li>
+            <li><a href="#personajes">Personajes</a></li>
+            <li><a href="#estructura">Estructura</a></li>
+            <li><a href="#simbolismo">Simbolismo</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>El Nombre de la Rosa</h1>
+        <p id="destacado">En este sitio web exploraré el libro <em>El Nombre de la Rosa</em> en detalle.</p>
+    </header>
+
+    <div class="container">
+        <section class="content-section" id="introduccion">
+            <h2>Introducción</h2>
+            <p>Bienvenido a un espacio dedicado a la intriga, el misterio y la erudición que envuelven El nombre de la rosa , la obra maestra de Umberto Eco. Esta novela nos sumerge en un laberinto de símbolos, conspiraciones e historia medieval, donde la razón y la fe se enfrentan en una abadía llena de secretos.
+
+                Aquí exploramos sus múltiples significados, desde su profunda carga filosófica hasta sus referencias literarias y su adaptación al cine. Si eres un amante del suspenso intelectual, la literatura histórica y los enigmas ocultos en los libros, este es tu lugar.</em>.</p>
+        </section>
+
+        <aside>
+            <h2>En el nombre de la Rosa</h2>
+            <p>Información sobre la estructura narrativa  y contexto histórico. En un monasterio benedictino del siglo XIV, el fraile franciscano Guillermo de Baskerville y su aprendiz Adso de Melk investigan una serie de misteriosos asesinatos. A medida que descubren pistas, se enfrentan a la censura de la Iglesia y a oscuros secretos ocultos en la abadía. La clave del misterio parece estar en una biblioteca prohibida y en un libro mortal. La historia combina intriga, filosofía y crítica al fanatismo religioso.</p>
+        </aside>
+    </div>
+
+    <section class="content-section" id="personajes">
+        <h2>Tabla de Personajes</h2>
+        <table>
+            <tr>
+                <th>Nombre</th>
+                <th>Rol en la historia</th>
+                <th>Más información</th>
+            </tr>
+            <tr>
+                <td>Guillermo de Baskerville</td>
+                <td>Monje franciscano y detective</td>
+                <td><a href="https://es.wikipedia.org/wiki/Guillermo_de_Baskerville" target="_blank" rel="noopener noreferrer">Wikipedia</a></td>
+            </tr>
+            <tr>
+                <td>Adso de Melk</td>
+                <td>Novicio y aprendiz de Guillermo</td>
+                <td><a href="#introduccion">Resumen del libro</a></td>
+            </tr>
+            <tr>
+                <td>Jorge de Burgos</td>
+                <td>Anciano monje ciego</td>
+                <td><a href="https://es.wikipedia.org/wiki/El_nombre_de_la_rosa" target="_blank" rel="noopener noreferrer">Más sobre la novela</a></td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="content-section" id="acordeon">
+        <h2>Acordeones de Información</h2>
+        <button class="accordion">Introducción</button>
+        <div class="panel">
+            <p>El libro <em>El Nombre de la Rosa</em> es una novela histórica de misterio escrita por Umberto Eco. Publicada en 1980, se sitúa en un monasterio benedictino del siglo XIV donde ocurren misteriosos asesinatos.</p>
+        </div>
+
+        <button class="accordion">Personajes</button>
+        <div class="panel">
+            <p>Los personajes principales son Guillermo de Baskerville, un monje franciscano con habilidades detectivescas, y Adso de Melk, su joven aprendiz. Juntos, investigan los oscuros sucesos en la abadía.</p>
+        </div>
+
+        <button class="accordion">Simbolismo</button>
+        <div class="panel">
+            <p>El libro está lleno de simbolismo, desde la arquitectura laberínt
+
+    <footer>
+        <p>Autor: Natalia Rodríguez</p>
+        <p>Contacto: <a href="mailto:nr102268@gmail.com">nr102268@gmail.com</a></p>
+        <p>Institución: Skolmi</p> <img src="logo.png" alt="Logo de la página sobre El Nombre de la Rosa" width="150">
+        <img src="skolmi.png" alt="Logo de Skolmi, institución educativa" width="150">
+    </footer>
+</body>
+</html>
